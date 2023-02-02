@@ -1,0 +1,33 @@
+.simulateurSolaire, .simulateurFinance {
+    padding-left: 2mm;
+}
+
+.containerGraphique {
+    border-radius: 3mm;
+    margin-top: 3mm;
+    padding: 2mm;
+}
+
+.inputSimulateur {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1mm;
+}
+
+.col1simu {
+    width: fit-content;
+    display: inline-block;
+}
+
+.col2simu {
+    display: inline-block;
+}
+
+.simulateurSolaire {
+    float: none;
+}
+
+.simurow {
+    float: initial;
+}

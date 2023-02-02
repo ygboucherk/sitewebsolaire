@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/simulateur.css">
+        <link rel="icon" href="images/soleil.jpg" type="image/jpg"/>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/finance.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Rentabilite</title>
+    </head>
+        <body>
+            <div class="navBar">
+                <a href="index.html"><img height="30" src="images/soleil.jpg"/></a>
+                <a href="photovoltaique.html"><button class="navButton">Photovoltaique</button></a>
+                <a href="thermique.html"><button class="navButton">Thermique</button></a>
+                <a href="hybride.html"><button class="navButton">hybride</button></a>
+            </div>
+            <div class="container">
+                    <h1 class="pageTitle">Rentabilite</h1>
+                    <div class="content">
+                        <div class="descriptionTechno">Voyons ensemble la rentabilité des panneaux solaires photovolta&iuml;ques, compar&eacute;e &agrave; un placement financier classique</div>
+                        <div class="entreeDonnees">
+                            <div class="simurow">
+                                <div class="col1simu">
+                                    <div class="paramSimulateur">Argent investi :</div>
+                                    <div class="paramSimulateur">&Eacute;chelle de temps</div>
+                                </div>
+                                <div class="col2simu">
+                                    <div class="paramSimulateur"><input value="6000" type="number" class="inputSimulateur" id="input_investissement" placeholder=""></input>&nbsp;€</div>
+                                    <div class="paramSimulateur"><input type="range" min="15" max="30" value="15" id="sliderDuree" onInput="sliderUpdate()"></range><span id="dureeSimulation">15ans</span></div>
+                                </div>
+                            </div>
+                            <h2>Solaire</h2>
+                            <div class="simulateurSolaire">
+                                <div class="simurow">
+                                    <div class="col1simu">
+                                        <div class="paramSimulateurSolaire">Prix du kWh :</div>
+                                        <div class="paramSimulateurSolaire">Prix de revente :</div>
+                                        <div class="paramSimulateurSolaire">Puissance install&eacute;e :</div>
+                                        <div class="paramSimulateurSolaire">Taux d'autoconsommation :</div>
+                                    </div>
+                                    <div class="col2simu">
+                                        <div class="paramSimulateurSolaire"><input value="0.206" type="number" class="inputSimulateur" id="input_prixKWH"></input>&nbsp;€</div>
+                                        <div class="paramSimulateurSolaire"><input value="0.1" type="number" class="inputSimulateur" id="input_prixRevente"></input>&nbsp;€</div>
+                                        <div class="paramSimulateurSolaire"><input value="3" type="number" class="inputSimulateur" id="input_puissanceInstallee"></input>&nbsp;kW</div>
+                                        <div class="paramSimulateurSolaire"><input type="range" min="0" max="100" id="sliderTauxAutoconso" onInput="sliderUpdate()"></range><span id="pourcentageAutoConso">50%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>Placement financier</h2>
+                            <div class="simulateurFinance">
+                                <div class="simurow">
+                                    <div class="simulateurFinance">
+                                        <div class="paramSimulateurFinance">Taux d'int&eacute;ret : <input value="1" type="number" class="inputSimulateur" id="input_tauxInterets"></input>&nbsp;%/an</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onClick="refresh()">Actualiser</button>
+                        </div>
+                        <div class="containerGraphique">
+                            <canvas id="graphique"></canvas>
+                        </div>
+                    </div>
+            </div>
+            <script src="scripts/loadend.js"></script>
+            <script src="scripts/chartWrapper.js"></script>
+        </body>
+        <footer><i>&copy; Yanis Boucherk, 2023</i></footer>
+    </html>

@@ -1,0 +1,154 @@
+table {
+    border-color: black;
+    border-width: 1px;
+}
+
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+.navBar {
+    padding-left: 10px;
+    background-color: #00000099;
+    color: transparent;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+}
+
+.imageIllustration {
+    border-radius: 50px;
+    padding-bottom: 5mm;
+}
+
+.navButton {
+    padding-top: 0px;
+    color: #dddddd;
+    background-color: #80808032;
+    height: 50px;
+    border-style: hidden;
+}
+
+.container {
+    padding-left: 15px;
+}
+
+a {
+    color: black;
+}
+
+.navLogo {
+    float: left;
+    padding-right: 5px;
+}
+
+.containerAvantagesInconvenients {
+	width: fit-content;
+    padding: 3mm;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+
+.avantagesDiv, .inconvenientsDiv {
+    padding-top: 10px;
+
+	padding-left: 3%;
+    padding-right: 15px;
+    border-radius: 20px;
+	padding-bottom: 3px;
+}
+
+.avantagesDiv {
+    background-color: #00f000;
+    margin-bottom: 5px;
+}
+
+.inconvenientsDiv {
+    background-color: red;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.statsContainer {
+    padding-right: 10%;
+    width: fit-content;
+}
+
+.statsCard, .chartCard {
+    padding-left: 1%;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.statsCard, .marketingCard {
+    padding: 5mm;
+    padding-right: 1cm;
+}
+
+.marketingCard {
+    padding: 3mm;
+}
+
+.chartCard {
+    padding-right: 3mm;
+}
+
+body {
+    background-color: #191519;
+    
+    /*background-image: url("../images/texture.webp");*/
+    /*background-attachment: fixed;*/
+    
+}
+
+.pageTitle {
+    width: fit-content;
+    color: white;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-left: 5%;
+    /*background-color: rgba(0, 0, 0, 69%);
+
+    padding-left: 5mm;
+    padding-right: 4mm;
+
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+
+    border-radius: 5mm;*/
+}
+
+.content {
+    margin-left: 10%;
+    padding: 5mm;
+    padding-left: 25px;
+    border-radius: 10mm;
+    min-width: fit-content;
+    background-color: #69f042;
+    width: 50%;
+    box-shadow: 10px 5px #00000090;
+    margin-bottom: 5px;
+    font-family: Georgia, serif;
+}
+
+.descriptionTechno {
+    font-size: 20px;
+    margin-bottom: 2mm;
+}
+
+footer {
+    color: #ffffff;
+    padding-left: 10%;
+}
+
+.meme {
+    border-radius: 5mm;
+}

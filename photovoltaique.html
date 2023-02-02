@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/main.js"></script>
+        <link rel="icon" href="images/soleil.jpg" type="image/jpg"/>
+        <title>Les panneaux photovoltaiques</title>
+    </head>
+    <body>
+        <div class="navBar">
+            <a href="index.html"><img height="30" src="images/soleil.jpg"/></a>
+            <a href="photovoltaique.html"><button class="navButton">Photovoltaique</button></a>
+            <a href="thermique.html"><button class="navButton">Thermique</button></a>
+            <a href="hybride.html"><button class="navButton">hybride</button></a>
+        </div>
+        <div class="container">
+            <h1 class="pageTitle">Une &eacute;tincelle de bon sens</h1>
+            <div class="content">
+                <div>
+                    <div class="descriptionTechno">Les panneaux photovoltaiques sont des panneaux solaires qui produisent du courant électrique ("volt").</div>
+                </div>
+                <img class="imageIllustration" height="420" src="images/photo_panneaux.jpg"></img>
+                <div class="navFonctionnement">
+                    <h2>Fonctionnement</h2>
+                    <ol>
+                        <li>La lumi&egrave;re frappe la panneau</li>
+                        <li>&Ccedil;ela cr&eacute;e une diff&eacute;rence de potentiel dans le panneau</li>
+                        <li>Ce qui produit un courant &eacute;lectrique</li>
+                        <li>On peut stocker ce courant dans une batterie ou l'utiliser directement</li>
+                    </ol>
+                    <h2>Differents types de panneaux</h2>
+                    Il existe differents types de cellules photovoltaiques
+                    <ul>
+                        <li>Cellules silicium monocristallines</li>
+                        &nbsp;Il s'agit des cellules avec le meilleur rendement. Cependant, elles sont aussi les plus ch&egrave;res.
+                        <li>Cellules silicium polycristallines</li>
+                        &nbsp;Bien qu'ayant rendement l&eacute;g&egrave;rement inf&eacute;, ces cellules ont le meilleur rapport qualit&eacute; prix
+                        <li>Cellules silicium amorphes</li>
+                    </ul>
+                </div>
+                <div class="containerAvantagesInconvenients">
+                    <div class="avantagesDiv">
+                        <h2>Avantages</h2>
+                        <ol>
+                            <li>Pas de CO2 lors de l'utilisation</li>
+                            <li>Longue dur&eacute;e de vie (>30 ans)</li>
+                        </ol>
+                    </div>
+                    <div class="inconvenientsDiv">
+                        <h2>Inconvenients</h2>
+                        <ol>
+                            <li>Le rendement diminue avec la chaleur (solution : <a href="hybride.html">panneaux hybrides</a>)</li>
+                            <li>Demande une surface importante</li>
+                        </ol>
+                    </div>
+                </div>
+                <h1>Une technologie en croissance</h1>
+                <img height="420" class="chartCard" src="images/statistiques_puissance_elec.svg"></img>
+                <h1>Le photovolta&iuml;que en chiffres</h1>
+                <div class="statsContainer">
+                    <div class="statsCard" id="tableProductionPhotovoltaique"></div>
+                    <div class="statsCard" id="tableSurfacePhotovoltaique"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer><i>&copy; Yanis Boucherk, 2023</i></footer>
+    <script>
+        document.getElementById("tableProductionPhotovoltaique").innerHTML = format._formatTable([["France", "Monde"], [donnees.volt.production.france.formate, donnees.volt.production.monde.formate]], "Production");
+        document.getElementById("tableSurfacePhotovoltaique").innerHTML = format._formatTable([["France", "Monde"], [donnees.volt.surface.france.formate, donnees.volt.surface.monde.formate]], "Surface");
+    </script>
+    <script src="scripts/loadend.js"></script>
+</html>
