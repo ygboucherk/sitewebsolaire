@@ -69,4 +69,12 @@ function refresh() {
     mettreAJour(window.graphique, formatDates(1, _temps), [placement.evolution(1, _temps), solaire.evolution(1, _temps)]);
 }
 
+function refreshOnEdit() {
+    doitRafraichir = document.getElementById("chk_rafraichir").checked;
+    console.log(doitRafraichir);
+    if (doitRafraichir) {
+        refresh();
+    }
+}
+
 window.graphique = afficher("graphique", wrapNombres(formatDates(1, 15), placement.evolution(1, 15), solaire.evolution(1, 15)));

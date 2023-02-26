@@ -27,8 +27,8 @@
                                     <div class="paramSimulateur">&Eacute;chelle de temps</div>
                                 </div>
                                 <div class="col2simu">
-                                    <div class="paramSimulateur"><input value="6000" type="number" class="inputSimulateur" id="input_investissement" placeholder=""></input>&nbsp;&euro;</div>
-                                    <div class="paramSimulateur"><input type="range" min="15" max="30" value="15" id="sliderDuree" onInput="sliderUpdate()"></range><span id="dureeSimulation">15ans</span></div>
+                                    <div class="paramSimulateur"><input value="6000" type="number" class="inputSimulateur" id="input_investissement" placeholder="" onChange="refreshOnEdit()"></input>&nbsp;&euro;</div>
+                                    <div class="paramSimulateur"><input type="range" min="15" max="30" value="15" id="sliderDuree" onInput="sliderUpdate()" onChange="refreshOnEdit()"></range><span id="dureeSimulation">15ans</span></div>
                                 </div>
                             </div>
                             <h2>Solaire</h2>
@@ -41,10 +41,10 @@
                                         <div class="paramSimulateurSolaire">Taux d'autoconsommation :</div>
                                     </div>
                                     <div class="col2simu">
-                                        <div class="paramSimulateurSolaire"><input value="0.206" type="number" class="inputSimulateur" id="input_prixKWH"></input>&nbsp;&euro;</div>
-                                        <div class="paramSimulateurSolaire"><input value="0.1" type="number" class="inputSimulateur" id="input_prixRevente"></input>&nbsp;&euro;</div>
-                                        <div class="paramSimulateurSolaire"><input value="3" type="number" class="inputSimulateur" id="input_puissanceInstallee"></input>&nbsp;kW</div>
-                                        <div class="paramSimulateurSolaire"><input type="range" min="0" max="100" id="sliderTauxAutoconso" onInput="sliderUpdate()"></range><span id="pourcentageAutoConso">50%</span></div>
+                                        <div class="paramSimulateurSolaire"><input value="0.206" type="number" class="inputSimulateur" id="input_prixKWH" onChange="refreshOnEdit()"></input>&nbsp;&euro;</div>
+                                        <div class="paramSimulateurSolaire"><input value="0.1" type="number" class="inputSimulateur" id="input_prixRevente" onChange="refreshOnEdit()"></input>&nbsp;&euro;</div>
+                                        <div class="paramSimulateurSolaire"><input value="3" type="number" class="inputSimulateur" id="input_puissanceInstallee" onChange="refreshOnEdit()"></input>&nbsp;kW</div>
+                                        <div class="paramSimulateurSolaire"><input type="range" min="0" max="100" id="sliderTauxAutoconso" onInput="sliderUpdate()" onChange="refreshOnEdit()"></range><span id="pourcentageAutoConso">50%</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -52,11 +52,14 @@
                             <div class="simulateurFinance">
                                 <div class="simurow">
                                     <div class="simulateurFinance">
-                                        <div class="paramSimulateurFinance">Taux d'int&ecirc;ret : <input value="1" type="number" class="inputSimulateur" id="input_tauxInterets"></input>&nbsp;%/an</div>
+                                        <div class="paramSimulateurFinance">Taux d'int&ecirc;ret : <input value="1" type="number" class="inputSimulateur" id="input_tauxInterets" onChange="refreshOnEdit()"></input>&nbsp;%/an</div>
                                     </div>
                                 </div>
                             </div>
-                            <button onClick="refresh()">Actualiser</button>
+                            <div class="optionsRafraichissement">
+                                <div><input type="checkbox" id="chk_rafraichir" checked="true"><label for="chk_rafraichir">Rafraichir automatiquement</label></div>
+                                <button onClick="refresh()">Actualiser</button>
+                            </div>
                         </div>
                         <div class="containerGraphique">
                             <canvas id="graphique"></canvas>

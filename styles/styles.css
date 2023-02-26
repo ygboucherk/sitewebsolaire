@@ -153,3 +153,9 @@ footer {
 .meme {
     border-radius: 5mm;
 }
+
+.adContainer {
+    float: right;
+    margin-right: 2mm;
+    color: #ffffffa0;
+}
