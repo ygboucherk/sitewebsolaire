@@ -157,5 +157,7 @@ footer {
 .adContainer {
     float: right;
     margin-right: 2mm;
+	height: 50px;
     color: #ffffffa0;
+	border-radius: 2px;
 }
