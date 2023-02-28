@@ -6,7 +6,7 @@ navContent = `
     <a href="aerovoltaique.html"><button class="navButton">Hybride aerovoltaiques</button></a>
     <a href="dualsun.html"><button class="navButton">Hybride dualsun</button></a>
     <a href="rentabilite.html"><button class="navButton">Simulateur</button></a>
-    <div class="adContainer">
+    <div class="adContainerNav">
 		<iframe data-aa="2176899" src="//acceptable.a-ads.com/2176899?size=Adaptive&background_color=230a0a&text_color=f2e9e9" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;"></iframe>
 	
         <!-- Pour mettre des pubs lol --!>

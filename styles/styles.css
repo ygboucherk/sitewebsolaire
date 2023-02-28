@@ -154,7 +154,7 @@ footer {
     border-radius: 5mm;
 }
 
-.adContainer {
+.adContainer, .adContainerNav {
     float: right;
     margin-right: 2mm;
 	height: 50px;
