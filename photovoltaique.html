@@ -59,16 +59,16 @@
                 <img height="420" class="chartCard" src="images/statistiques_puissance_elec.svg"></img>
                 <h1>Le photovolta&iuml;que en chiffres</h1>
                 <div class="statsContainer">
-                    <div class="statsCard" id="tableProductionPhotovolta&iuml;que"></div>
-                    <div class="statsCard" id="tableSurfacePhotovolta&iuml;que"></div>
+                    <div class="statsCard" id="tableProductionPhotovoltaique"></div>
+                    <div class="statsCard" id="tableSurfacePhotovoltaique"></div>
                 </div>
             </div>
         </div>
     </body>
     <footer><i>&copy; Yanis Boucherk, 2023</i></footer>
     <script>
-        document.getElementById("tableProductionPhotovolta&iuml;que").innerHTML = format._formatTable([["France", "Monde"], [donnees.volt.production.france.formate, donnees.volt.production.monde.formate]], "Production");
-        document.getElementById("tableSurfacePhotovolta&iuml;que").innerHTML = format._formatTable([["France", "Monde"], [donnees.volt.surface.france.formate, donnees.volt.surface.monde.formate]], "Surface");
+        document.getElementById("tableProductionPhotovoltaique").innerHTML = format._formatTable([["France", "Monde"], [donnees.volt.production.france.formate, donnees.volt.production.monde.formate]], "Production");
+        document.getElementById("tableSurfacePhotovoltaique").innerHTML = format._formatTable([["France", "Monde"], [donnees.volt.surface.france.formate, donnees.volt.surface.monde.formate]], "Surface");
     </script>
     <script src="scripts/loadend.js"></script>
 </html>
